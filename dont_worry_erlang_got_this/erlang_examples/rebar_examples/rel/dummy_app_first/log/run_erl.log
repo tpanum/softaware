@@ -1,0 +1,8 @@
+run_erl [8953] Tue May  7 20:19:49 2013
+Args before exec of shell:
+run_erl [8953] Tue May  7 20:19:49 2013
+argv[0] = sh
+run_erl [8953] Tue May  7 20:19:49 2013
+argv[1] = -c
+run_erl [8953] Tue May  7 20:19:49 2013
+argv[2] = exec /Volumes/Mac/Users/bjarkehs/Code/ErlangExamples/rebar_examples/rel/dummy_app_first/bin/dummy_app console '' 
