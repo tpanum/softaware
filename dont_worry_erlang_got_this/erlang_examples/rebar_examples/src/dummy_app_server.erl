@@ -3,7 +3,7 @@
 -behaviour(gen_server).
 
 %% API
--export([start_link/0, poke/0, num_pokes/0, poke_twice/0]).
+-export([start_link/0, poke/0, num_pokes/0, poke_twice/0, please_die/0]).
 
 %% gen_server callbacks
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2,
@@ -24,6 +24,8 @@ num_pokes() ->
 poke_twice() ->
     gen_server:call(?MODULE, poke_twice).
 
+please_die() ->
+    gen_server:call(?MODULE, please_die).
 
 %% gen_server callbacks
 init([]) ->
@@ -42,7 +44,11 @@ handle_call(poke, _From, State) ->
     NewPokeCount = State#state.num_pokes + 1,
     NewState     = State#state{num_pokes = NewPokeCount},
     Reply        = {ok, NewPokeCount},
-    {reply, Reply, NewState}.
+    {reply, Reply, NewState};
+
+handle_call(please_die, _From, State) ->
+    error(auch),
+    {reply, ok, State}.
 
 handle_cast(_Msg, State) ->
     {noreply, State}.

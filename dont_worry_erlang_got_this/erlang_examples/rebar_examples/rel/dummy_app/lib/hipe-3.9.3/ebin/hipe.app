@@ -1,4 +1,4 @@
-%% app generated at {2013,5,7} {20,19,1}
+%% app generated at {2013,5,8} {10,41,23}
 {application,hipe,
              [{description,"HiPE Native Code Compiler, version 3.9.3"},
               {vsn,"3.9.3"},

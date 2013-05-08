@@ -1,4 +1,4 @@
-%% app generated at {2013,5,7} {20,19,1}
+%% app generated at {2013,5,8} {10,41,23}
 {application,crypto,
              [{description,"CRYPTO version 2"},
               {vsn,"2.2"},
