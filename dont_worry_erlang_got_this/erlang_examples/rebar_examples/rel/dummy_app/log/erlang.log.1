@@ -1,0 +1,74 @@
+
+=====
+===== LOGGING STARTED Wed May  8 10:37:31 CEST 2013
+=====
+Exec: /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/erts-5.9.3.1/bin/erlexec -boot /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/dummy_app -mode embedded -config /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/sys.config -args_file /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/vm.args -- console 
+Root: /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app
+Erlang R15B03 (erts-5.9.3.1) [source] [64-bit] [smp:2:2] [async-threads:0] [hipe] [kernel-poll:false] [dtrace]
+
+Eshell V5.9.3.1  (abort with ^G)
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> poke    dummy_app_s
+dummy_app_server    dummy_app_sup       
+(dummy_app@127.0.0.1)1> dummy_app_server:poke()[C[C.
+{ok,1}
+(dummy_app@127.0.0.1)2>                         (dummy_app@127.0.0.1)2> dummy_app_server:poke().
+{ok,2}
+(dummy_app@127.0.0.1)3>                         (dummy_app@127.0.0.1)3> dummy_app_server:poke().(). (). (). (). y().o().u()._().d().i().e().[C[C[C
+** exception error: undefined function dummy_app_server:you_die/0
+(dummy_app@127.0.0.1)4> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+=====
+===== LOGGING STARTED Wed May  8 10:41:38 CEST 2013
+=====
+Exec: /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/erts-5.9.3.1/bin/erlexec -boot /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/dummy_app -mode embedded -config /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/sys.config -args_file /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app/releases/2/vm.args -- console 
+Root: /Volumes/Mac/Users/bjarkehs/Documents/softaware/dont_worry_erlang_got_this/erlang_examples/rebar_examples/rel/dummy_app
+Erlang R15B03 (erts-5.9.3.1) [source] [64-bit] [smp:2:2] [async-threads:0] [hipe] [kernel-poll:false] [dtrace]
+
+Eshell V5.9.3.1  (abort with ^G)
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> 
+(dummy_app@127.0.0.1)1> dummy_app_s
+dummy_app_server    dummy_app_sup       
+(dummy_app@127.0.0.1)1> dummy_app_server:poke()[C[C.
+{ok,1}
+(dummy_app@127.0.0.1)2>                         (dummy_app@127.0.0.1)2> dummy_app_server:poke().
+{ok,2}
+(dummy_app@127.0.0.1)3>                         (dummy_app@127.0.0.1)3> dummy_app_server:poke().
+{ok,3}
+(dummy_app@127.0.0.1)4>                         (dummy_app@127.0.0.1)4> dummy_app_server:poke().(). (). (). (). p().l().e().a().s().e()._().d().i().e().[C[C[C
+
+=ERROR REPORT==== 8-May-2013::10:41:55 ===
+** Generic server dummy_app_server terminating 
+** Last message in was please_die
+** When Server state == {state,3}
+** Reason for termination == 
+** {auch,[{dummy_app_server,handle_call,3,
+                            [{file,"src/dummy_app_server.erl"},{line,50}]},
+          {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},
+          {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+** exception exit: {{auch,[{dummy_app_server,handle_call,3,
+                                             [{file,"src/dummy_app_server.erl"},{line,50}]},
+                           {gen_server,handle_msg,5,
+                                       [{file,"gen_server.erl"},{line,588}]},
+                           {proc_lib,init_p_do_apply,3,
+                                     [{file,"proc_lib.erl"},{line,227}]}]},
+                    {gen_server,call,[dummy_app_server,please_die]}}
+     in function  gen_server:call/2 (gen_server.erl, line 180)
+(dummy_app@127.0.0.1)5>                         (dummy_app@127.0.0.1)5> dummy_app_server:please_die().                                                      (dummy_app@127.0.0.1)5> dummy_app_server:poke().
+{ok,1}
+(dummy_app@127.0.0.1)6>                         (dummy_app@127.0.0.1)6> dummy_app_server:poke().
+{ok,2}
+(dummy_app@127.0.0.1)7>                         (dummy_app@127.0.0.1)7> dummy_app_server:poke().
+{ok,3}
+(dummy_app@127.0.0.1)8> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a

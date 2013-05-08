@@ -1,0 +1,42 @@
+
+=CRASH REPORT==== 8-May-2013::10:41:55 ===
+  crasher:
+    initial call: dummy_app_server:init/1
+    pid: <0.50.0>
+    registered_name: dummy_app_server
+    exception exit: {auch,
+                        [{dummy_app_server,handle_call,3,
+                             [{file,"src/dummy_app_server.erl"},{line,50}]},
+                         {gen_server,handle_msg,5,
+                             [{file,"gen_server.erl"},{line,588}]},
+                         {proc_lib,init_p_do_apply,3,
+                             [{file,"proc_lib.erl"},{line,227}]}]}
+      in function  gen_server:terminate/6 (gen_server.erl, line 747)
+    ancestors: [dummy_app_sup,<0.48.0>]
+    messages: []
+    links: [<0.49.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 24
+    reductions: 155
+  neighbours:
+
+=SUPERVISOR REPORT==== 8-May-2013::10:41:55 ===
+     Supervisor: {local,dummy_app_sup}
+     Context:    child_terminated
+     Reason:     {auch,
+                     [{dummy_app_server,handle_call,3,
+                          [{file,"src/dummy_app_server.erl"},{line,50}]},
+                      {gen_server,handle_msg,5,
+                          [{file,"gen_server.erl"},{line,588}]},
+                      {proc_lib,init_p_do_apply,3,
+                          [{file,"proc_lib.erl"},{line,227}]}]}
+     Offender:   [{pid,<0.50.0>},
+                  {name,dummy_app_server},
+                  {mfargs,{dummy_app_server,start_link,[]}},
+                  {restart_type,permanent},
+                  {shutdown,5000},
+                  {child_type,worker}]
+

@@ -1,0 +1,9 @@
+{"2",
+ [{"1",[],
+   [{load_object_code,{dummy_app,"2",[dummy_app_server]}},
+    point_of_no_return,
+    {suspend,[dummy_app_server]},
+    {load,{dummy_app_server,brutal_purge,brutal_purge}},
+    {code_change,up,[{dummy_app_server,[]}]},
+    {resume,[dummy_app_server]}]}],
+ [{"1",[],[point_of_no_return]}]}.
